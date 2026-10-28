@@ -1,0 +1,54 @@
+# ==========================================
+# 1. Các thư mục build, zip & môi trường chung
+# ==========================================
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+logs/
+build/
+dist/
+dist.zip
+*.zip
+*.spec
+
+# ==========================================
+# 2. Dữ liệu Vector DB & Cache
+# ==========================================
+data/chroma/
+data/vectorstore/
+data/cache/
+data/faiss/
+
+# ==========================================
+# 3. Dữ liệu tạm & xuất bản
+# ==========================================
+data/temp/
+data/tmp/
+data/output/
+data/exports/
+data/reports/
+data/parsed/
+
+# ==========================================
+# 4. File cấu hình cá nhân & Database
+# ==========================================
+data/settings.json
+data/user_data.json
+data/history.json
+data/database.db
+data/*.sqlite3
+data/*.db
+
+# ==========================================
+# 5. File tài liệu nặng (PDF, DOCX...)
+# ==========================================
+data/documents/*.pdf
+data/documents/*.docx
+data/raw/*.pdf
+data/raw/*.docx
+
+# Giữ lại cấu trúc thư mục data
+!data/.gitkeep
+!data/settings.json.example
